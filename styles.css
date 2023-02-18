@@ -1,0 +1,66 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+body{
+    background-color: #263245;
+    color: white;
+    margin: 0;
+}
+header *{
+    margin: 0;
+}
+
+header{
+    background-color: #263245;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 20px;
+}
+header h2{
+    flex-basis: 90%;
+}
+#titulo{
+    text-decoration: none;
+    color: white;
+}
+header input{
+    background-color: #4a515c;
+    font-size: 20px;
+    color: white;
+}
+#peliculasContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 96%;
+    margin: auto;
+    margin-top: 70px;
+    
+}
+.peliculas{
+    border: 2px solid black;
+    flex-basis: 24%;
+    background-color: #4a515c;
+    margin: 3px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+img{
+    display: block;
+    width: 90%;
+
+    margin: 10px auto;
+    border-radius: 10px;
+}
+.peliculas p{
+    text-align: center;
+}
+@media(max-width:668px){
+    .peliculas{
+        flex-basis: 100%;
+    }
+}
